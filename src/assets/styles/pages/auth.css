@@ -1,0 +1,36 @@
+.auth .form .btn {
+  margin-top: 0;
+}
+
+.auth .form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth .title {
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.auth {
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 10px;
+}
+
+.auth .container{
+  padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background: #f7fcfa;
+    border-radius: 20px;
+}
+
+.auth .form-field.row {
+  grid-template-columns: max-content 1fr;
+  align-items: start;
+}
+
+.auth .form-field.row input[type='checkbox'] {
+  margin-top: 4px;
+}

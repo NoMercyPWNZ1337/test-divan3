@@ -1,0 +1,48 @@
+@import url('../fonts/Roboto/index.css');
+
+@import url('./components/base/index.css');
+@import url('./components/logo/index.css');
+@import url('./components/header/index.css');
+@import url('./components/footer/index.css');
+@import url('./components/product-card/index.css');
+@import url('./components/scrollbar/index.css');
+@import url('./components/title/index.css');
+@import url('./components/dropdown-header/index.css');
+@import url('./components/btn/index.css');
+@import url('./components/form/index.css');
+
+@import url('./pages/home.css');
+@import url('./pages/personal-account.css');
+@import url('./pages/product.css');
+@import url('./pages/catalog.css');
+@import url('./pages/method-nakatani.css');
+@import url('./pages/admin-panel.css');
+@import url('./pages/auth.css');
+
+* {
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Comfortaa', cursive; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+body{
+  background-color: #fffbf2;
+}
+

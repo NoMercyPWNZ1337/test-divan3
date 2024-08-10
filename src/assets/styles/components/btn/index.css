@@ -1,0 +1,36 @@
+.btn {
+  grid-area: btn;
+  padding: 8px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: max-content;
+  font-size: 15px;
+  justify-self: end;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn.active,
+.btn:hover {
+  border-color: #fffbf2;
+  color: #fffbf2;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn:disabled {
+  color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.btn.red {
+  border-color: rgba(255, 0, 0, 0.2);
+  color: rgba(255, 0, 0, 0.6);
+}
+.btn.red:hover {
+  border-color: rgba(255, 0, 0, 1);
+  color: red;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+a.btn {
+  display: block;
+}

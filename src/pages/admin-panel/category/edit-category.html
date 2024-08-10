@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Панель адміністратора: редагування товару | FixHealth</title>
+    <link rel="stylesheet" href="/src/assets/styles/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="admin-panel">
+      <div class="container">
+        <h1 class="title">Панель адміністратора: редагування категорій</h1>
+        <div class="panel-navigation">
+          <a class="btn" href="/admin-panel/category-list">Назад</a>
+        </div>
+
+        <form id="edit-category" class="form">
+          <label for="name" class="form-field">
+            <span class="form-title">Назва категорії</span>
+            <input class="form-input" id="name" type="text" name="name" />
+          </label>
+          <button type="submit" class="btn">Оновити категорію</button>
+        </form>
+      </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="/src/functionality/modules/admin-panel/category/edit-category.js"
+    ></script>
+  </body>
+</html>
