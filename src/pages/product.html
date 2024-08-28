@@ -4,200 +4,325 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>| FixHealth</title>
-  <link rel="stylesheet" href="/src/assets/styles/index.css" />
+  <title>Продукт | МійДиванчик</title>
+  <link rel="stylesheet" href="../assets/styles/index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="../assets/images/icons/favicon-32x32.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="../assets/images/icons/favicon-16x16.png">
 </head>
 
 <body>
   <header id="header" class="header">
     <div class="container">
-      <a class="logo" href="/">
-        <img src="/src/assets/images/logo-sofa-gg.png" alt="heart icon" />
+      <a class="logo" href="../../index.html">
+        <img src="../assets/images/logo-sofa-gg.png" alt="heart icon" />
         <span>МійДиванчик</span>
       </a>
 
       <nav class="links">
         <div id="dropdown" class="dropdown">
-          <a href="/catalog" class="link dropdown-trigger">Каталог</a>
-          <ul id="dropdown-list" class="dropdown-list"></ul>
+          <a href="../pages/catalog.html" class="link dropdown-trigger">Каталог</a>
+          <ul id="dropdown-list" class="dropdown-list">
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=sofa" class="list-link">
+                Дивани
+              </a>
+              <ul class="dropdown-underlist">
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=straight" class="list-link">
+                    Прямі дивани
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=corner" class="list-link">
+                    Кутові дивани
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=sofa&subcategory=modular" class="list-link">
+                    Модульні дивани
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=puffs" class="list-link">
+                Пуфи
+              </a>
+              <ul class="dropdown-underlist">
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=puffs&subcategory=puffs_standart" class="list-link">
+                    Стандартні пуфи
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=puffs&subcategory=puffs_open" class="list-link">
+                    Пуфи що відкриваються
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=puffs&subcategory=puffs_5v1" class="list-link">
+                    Пуф 5 в 1
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=bad" class="list-link">
+                Ліжка
+              </a>
+              <ul class="dropdown-underlist">
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=bad&subcategory=single" class="list-link">
+                    Односпальні ліжка
+                  </a>
+                </li>
+                <li class="underlist-item">
+                  <a href="../pages/catalog.html?category=bad&subcategory=double" class="list-link">
+                    Двоспальні ліжка
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=rest" class="list-link">
+                Ресторанні меблі
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="../pages/catalog.html?category=banket" class="list-link">
+                Банкетки
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- <a class="link" href="/#awards">Наші нагороди</a> -->
-        <a class="link" href="/#about">Про нас</a>
+        <!-- <a class="link" href="#awards">Наші нагороди</a> -->
+        <a class="link" href="../pages/service.html">Послуги</a>
+        <section class="last-blocks">
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" />
+            </svg>
+            <p>+380 63 934 0346</p>
+          </article>
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M444 49.9C431.3 38.2 379.9 .9 265.3 .4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9 .4-85.7 .4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9 .4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9 .6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4 .7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5 .9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9 .1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7 .5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1 .8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+            </svg>
+            <p>+380 67 859 5561</p>
+          </article>
+        </section>
       </nav>
 
       <div class="row">
         <div id="search" class="search">
           <div id="search-bg" class="search-bg"></div>
-          <button type="submit" id="search-trigger" class="search-trigger">
-            <img src="/src/assets/images/search.svg" alt="search icon" />
+          <button type="none" id="search-trigger" class="search-trigger">
+            <img src="../assets/images/search.svg" alt="search icon" />
             <span>Пошук</span>
           </button>
           <form id="search-form" class="search-form">
-            
             <button type="submit" class="search-btn">
-              <img src="/src/assets/images/search.svg" alt="search icon" />
+              <img src="../assets/images/search.svg" alt="search icon" />
             </button>
             <input name="search" type="text" class="search-input" />
+
             <ul id="product-list" class="search-list"></ul>
             <ul id="analog-list" class="search-list search-list-analog"></ul>
           </form>
         </div>
 
-       
-
-        <a href="/personal-account/favorites" id="favorite" class="favorite">
-          <img src="/src/assets/images/favorite.svg" alt="favorite icon" />
-          <span id="favorite-quantity"></span>
-        </a>
-
-        <a href="/personal-account/shopping-cart" id="basket" class="basket">
-          <img src="/src/assets/images/basket.svg" alt="basket icon" />
-          <span id="basket-quantity"></span>
-        </a>
-
+        <!-- <a href="/personal-account" class="user">
+          <img src="/src/assets/images/user.svg" alt="user icon" />
+        </a> -->
       </div>
 
       <button class="burger-menu" id="burger-menu">
-        <img src="/src/assets/images/bars-solid (1).svg" alt="burger menu icon" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffbf2" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
       </button>
       <nav class="mobile-nav" id="mobile-nav">
+        <div class="dropdown-chat-service">
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" />
+            </svg>
+            <p>+380 63 934 0346</p>
+          </article>
 
-        <a href="/catalog" class="link">Усі товари</a>
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M444 49.9C431.3 38.2 379.9 .9 265.3 .4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9 .4-85.7 .4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9 .4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9 .6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4 .7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5 .9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9 .1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7 .5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1 .8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+            </svg>
+            <p>+380 67 859 5561</p>
+          </article>
+        </div>
+
+
+        <a href="../pages/catalog.html" class="link">Усі товари</a>
         <div class="dropdown-chat">
-          <button class="dropdown-trigger-chat">Дивани</button>
+          <button class="dropdown-trigger-chat">Дивани <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffbf2" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button>
           <ul class="dropdown-content-chat">
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cb66704fe349a912721" class="list-link">Прямі дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=straight" class="list-link">Прямі дивани</a>
             </li>
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cbe6704fe349a912725" class="list-link">Кутові дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=corner" class="list-link">Кутові дивани</a>
             </li>
             <li class="underlist-item-mobile">
-              <a href="/catalog?underCategoryId=669e1cc66704fe349a912729" class="list-link">Модульні дивани</a>
+              <a href="../pages/catalog.html?category=sofa&subcategory=modular" class="list-link">Модульні дивани</a>
             </li>
           </ul>
         </div>
 
-        <a href="/catalog?categoryId=669786ea6da4b7b85823a3b4" class="link">Пуфи</a>
-        <ul class="dropdown-underlist"></ul>
-        <a href="/catalog?categoryId=669786ea6da4b7b85823a3b4" class="link">Ліжка</a>
-        <ul class="dropdown-underlist"></ul>
-        <a class="link" href="#about">Про нас</a>
+        <div class="dropdown-chat">
+          <button class="dropdown-trigger-chat">Пуфи <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffbf2" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button>
+          <ul class="dropdown-content-chat">
+            <li class="underlist-item-mobile">
+              <a href="../pages/catalog.html?category=puffs&subcategory=puffs_standart" class="list-link">Стандартні
+                пуфи</a>
+            </li>
+            <li class="underlist-item-mobile">
+              <a href="../pages/catalog.html?category=puffs&subcategory=puffs_open" class="list-link">Пуфи що
+                відкриваються</a>
+            </li>
+            <li class="underlist-item-mobile">
+              <a href="../pages/catalog.html?category=puffs&subcategory=puffs_5v1" class="list-link">Пуф 5 в 1</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown-chat">
+          <button class="dropdown-trigger-chat">Ліжка <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffbf2" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></button>
+          <ul class="dropdown-content-chat">
+            <li class="underlist-item-mobile">
+              <a href="../pages/catalog.html?category=bad&subcategory=single" class="list-link">Односпальні ліжка</a>
+            </li>
+            <li class="underlist-item-mobile">
+              <a href="../pages/catalog.html?category=bad&subcategory=double" class="list-link">Двоспальні ліжка</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="../pages/catalog.html?category=rest" class="link">Ресторанні меблі</a>
+
+        <a href="../pages/catalog.html?category=banket" class="link">Банкетки</a>
+
+        <!-- <a href="src/pages/catalog.html?category=puffs" class="link">Пуфи</a>
+        <ul class="dropdown-underlist"></ul> -->
+        <!-- <ul class="dropdown-underlist"></ul> -->
+        <a class="link" href="../pages/service.html">Послуги</a>
 
       </nav>
+
+
     </div>
   </header>
 
   <main class="product-page">
     <section class="product-section">
       <div class="container product" id="product">
-        
+
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <a class="logo" href="/">
-        <img src="/src/assets/images/logo-sofa-gg.png" alt="heart icon" />
+      <a class="logo" href="../../index.html">
+        <img src="../assets/images/logo-sofa-gg.png" alt="heart icon" />
         <span>МійДиванчик</span>
       </a>
       <ul class="footer-list">
-        <li class="footer-title">Клієнтам</li>        
+        <li class="footer-title">Наші вироби:</li>
         <li>
-          <a href="/">Способи оплати</a>
-        </li>
-        <li>
-          <a href="">Доставка</a>
-        </li>
-        <li>
-          <a href="/">Гарантії якості</a>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-title">Компанія</li>
-        <li>
-          <a href="/">Про нас</a>
-        </li>
-        <li>
-          <a href="/">Контакти</a>
-        </li>
-        <li>
-          <a href="/">Команда</a>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li class="footer-title">Контакти</li>
-        <li>
-          <a href="tel:+16282806518">Номер телефону: (+38) 068 280 6518</a>
-        </li>
-        <li>
-          <a href="mailto:oleksandr_alfredo@gmail.com">
-            Пошта: fixHealth@gmail.com
+          <a href="../pages/catalog.html?category=sofa" class="list-link">
+            Дивани
           </a>
         </li>
+               
         <li>
-          <a href="/">Адресса: Україна, Вінниця, вул. Київська</a>
+          <a href="../pages/catalog.html?category=puffs" class="list-link">
+            Пуфи
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/catalog.html?category=bad" class="list-link">
+            Ліжка
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/catalog.html?category=rest" class="list-link">
+            Ресторанні меблі
+          </a>
+        </li>
+
+        <li>
+          <a href="../pages/catalog.html?category=banket" class="list-link">
+            Банкетки
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-title">Контакти:</li>
+        <li>
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" />
+            </svg>
+            <p>+380 63 934 0346</p>
+          </article>
+        </li>
+        
+        <li>
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path fill="#fffbf2"
+                d="M444 49.9C431.3 38.2 379.9 .9 265.3 .4c0 0-135.1-8.1-200.9 52.3C27.8 89.3 14.9 143 13.5 209.5c-1.4 66.5-3.1 191.1 117 224.9h.1l-.1 51.6s-.8 20.9 13 25.1c16.6 5.2 26.4-10.7 42.3-27.8 8.7-9.4 20.7-23.2 29.8-33.7 82.2 6.9 145.3-8.9 152.5-11.2 16.6-5.4 110.5-17.4 125.7-142 15.8-128.6-7.6-209.8-49.8-246.5zM457.9 287c-12.9 104-89 110.6-103 115.1-6 1.9-61.5 15.7-131.2 11.2 0 0-52 62.7-68.2 79-5.3 5.3-11.1 4.8-11-5.7 0-6.9 .4-85.7 .4-85.7-.1 0-.1 0 0 0-101.8-28.2-95.8-134.3-94.7-189.8 1.1-55.5 11.6-101 42.6-131.6 55.7-50.5 170.4-43 170.4-43 96.9 .4 143.3 29.6 154.1 39.4 35.7 30.6 53.9 103.8 40.6 211.1zm-139-80.8c.4 8.6-12.5 9.2-12.9 .6-1.1-22-11.4-32.7-32.6-33.9-8.6-.5-7.8-13.4 .7-12.9 27.9 1.5 43.4 17.5 44.8 46.2zm20.3 11.3c1-42.4-25.5-75.6-75.8-79.3-8.5-.6-7.6-13.5 .9-12.9 58 4.2 88.9 44.1 87.8 92.5-.1 8.6-13.1 8.2-12.9-.3zm47 13.4c.1 8.6-12.9 8.7-12.9 .1-.6-81.5-54.9-125.9-120.8-126.4-8.5-.1-8.5-12.9 0-12.9 73.7 .5 133 51.4 133.7 139.2zM374.9 329v.2c-10.8 19-31 40-51.8 33.3l-.2-.3c-21.1-5.9-70.8-31.5-102.2-56.5-16.2-12.8-31-27.9-42.4-42.4-10.3-12.9-20.7-28.2-30.8-46.6-21.3-38.5-26-55.7-26-55.7-6.7-20.8 14.2-41 33.3-51.8h.2c9.2-4.8 18-3.2 23.9 3.9 0 0 12.4 14.8 17.7 22.1 5 6.8 11.7 17.7 15.2 23.8 6.1 10.9 2.3 22-3.7 26.6l-12 9.6c-6.1 4.9-5.3 14-5.3 14s17.8 67.3 84.3 84.3c0 0 9.1 .8 14-5.3l9.6-12c4.6-6 15.7-9.8 26.6-3.7 14.7 8.3 33.4 21.2 45.8 32.9 7 5.7 8.6 14.4 3.8 23.6z" />
+            </svg>
+            <p>+380 67 859 5561</p>
+          </article>
+        </li>
+
+        <li>
+          <article class="phones">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#fffbf2" d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+            <p>@miy_divanchik</p>
+          </article>
         </li>
       </ul>
       <div class="footer-apps">
-        <p class="footer-title">Завантажуйте наш додаток</p>
+        <p class="footer-title">Напишіть нам:</p>
         <div class="row">
-          <a href="/">
-            <img src="/src/assets/images/app-store.png" alt="app store image" />
+          <a href="https://t.me/miy_divanchik">
+            <img src="../assets/images/telegram.png" alt="telegram image" />
           </a>
-          <a href="/">
-            <img src="/src/assets/images/google-play.png" alt="google play image" />
-          </a>
-          <a href="/">
-            <img src="/src/assets/images/telegram.png" alt="telegram image" />
-          </a>
-          <a href="/">
-            <img src="/src/assets/images/viber.png" alt="viber image" />
+          <a href="viber://chat?number=%2B380678595561">
+            <img src="../assets/images/viber.png" alt="viber image" />
           </a>
         </div>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const burgerMenu = document.getElementById('burger-menu');
-      const mobileNav = document.getElementById('mobile-nav');
-
-      burgerMenu.addEventListener('click', () => {
-        mobileNav.classList.toggle('active');
-      });
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const dropdownTrigger = document.querySelector('.dropdown-trigger-chat');
-      const dropdown = document.querySelector('.dropdown-chat');
-
-      dropdownTrigger.addEventListener('click', () => {
-        dropdown.classList.toggle('active-chat');
-      });
-
-      // Закрити дропдаун, якщо натиснути за межами його області
-      window.addEventListener('click', (event) => {
-        if (!event.target.matches('.dropdown-trigger-chat')) {
-          if (dropdown.classList.contains('active-chat')) {
-            dropdown.classList.remove('active-chat');
-          }
-        }
-      });
-    });
-
-    document.getElementById('burger-menu').addEventListener('click', function () {
-      const searchTrigger = document.getElementById('search-trigger');
-
-      // Додаємо або прибираємо клас для зміни стилів
-      searchTrigger.classList.toggle('active');
-    });
-  </script>
-  <script type="text/javascript" src="/src/functionality/modules/base.js"></script>
-  <script type="text/javascript" src="/src/functionality/modules/product.js"></script>
+  <script src="../modules/burger-dinamic.js"></script>
+  <!-- <script type="text/javascript" src="src/functionality/modules/base.js"></script> -->
+  <script type="text/javascript" src="../db/db_cards.js"></script>
+  <script type="text/javascript" src="../modules/product.js"></script>
+  <script type="text/javascript" src="../modules/search.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 2px 3px 3px #fffbf2;
+  text-shadow: 2px 2px 2px #fffbf2;
   transition: all 0.2s ease;
 }
 

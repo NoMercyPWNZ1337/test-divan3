@@ -49,11 +49,23 @@
   text-align: center;
   grid-column: 1 / 4;
   height: 60px;
+  margin-bottom: 5px;
 }
 
 .catalog-page .catalog-products .product-card .card-image,
-.home .discounted-swipe .swiper-slide .product-card .card-image{
+.home .discounted-swipe .swiper-slide .product-card .card-image {
   grid-column: 1 / 4;
+}
+
+.card-image-a {
+  /* width: 100%;
+  margin: auto; */
+  width: 100%;
+  display: flex;
+  height: -webkit-fill-available;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .catalog-page .watched-products {
@@ -96,11 +108,50 @@
   display: grid;
 }
 
-.catalog-page #watched-products #watched-swiper .product-card button{
+.catalog-page #watched-products #watched-swiper .product-card button {
   margin-right: 15px;
 }
 
-.catalog-page .form-input{
+.product-card>a>img[src="../assets/images/puffs/standartPuf/puf1_1.jpg"],
+.product-card>a>img[src="../assets/images/puffs/openPuf/puf2_1.jpg"],
+.product-card>a>img[src="../assets/images/puffs/openPuf/puf3_1.jpg"],
+.product-card>a>img[src="../assets/images/puffs/puf5v1/puf4_1.jpg"],
+.product-card>a>img[src="../assets/images/puffs/puf5v1/puf5_1.jpg"] {
+  width: 60%;
+  padding-top: 30px;
+}
+
+.product-card>a>img[src="../assets/images/bads/double/bad1_1.jpg"],
+.product-card>a>img[src="../assets/images/bads/double/bad2_1.jpg"],
+.product-card>a>img[src="../assets/images/bads/double/bad3_1.jpg"],
+.product-card>a>img[src="../assets/images/bads/double/bad4_1.jpg"],
+.product-card>a>img[src="../assets/images/bads/double/bad5_1.jpg"] {
+  width: 85%;
+  /* margin-top: 30px; */
+}
+
+.product-card>a>img[src="../assets/images/puffs/standartPuf/puf7_1.jpg"] {
+  width: 60%;
+}
+
+.product-card>a>img[src="../assets/images/banket/bank2_1.jpg"],
+.product-card>a>img[src="../assets/images/banket/bank3_1.jpg"] {
+  width: 80%;
+}
+
+.product-card>a>img[src="../assets/images/straight sofas/p9_1.jpg"] {
+  max-width: 160% !important;
+  width: 160% !important;
+  margin-left: -28%;
+}
+
+.product-card>a>img[src="../assets/images/corner sofas/k6_1.jpg"] {
+  max-width: 125% !important;
+  width: 125% !important;
+  margin-left: -10%;
+}
+
+.catalog-page .form-input {
   /* box-shadow: inset 0px 2px 7.5px 6px #3d2808; */
   box-shadow: inset 0 2px 6px rgb(61 40 8);
   border: none;
@@ -108,13 +159,116 @@
   background: #fffbf2;
 }
 
-.catalog-page .catalog-filters .filters-row{
+.catalog-page .catalog-filters .filters-row {
   display: none;
+}
+
+.category-filter,
+.subcategory-filter {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.category-filter+label,
+.subcategory-filter+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.category-filter+label::before,
+.subcategory-filter+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #fffbf2;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-position: center center;
+  background-color: #fffbf2;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+}
+
+.category-filter:checked+label::before,
+.subcategory-filter:checked+label::before {
+  border-color: #fffbf2;
+  background-color: #fffbf2;
+  background-image: url("../../images/1687.png");
+}
+
+/* стили при наведении курсора на checkbox */
+.category-filter:not(:disabled):not(:checked)+label:hover::before,
+.subcategory-filter:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #fffbf2;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.category-filter:not(:disabled):active+label::before,
+.subcategory-filter:not(:disabled):active+label::before {
+  background-color: #fffbf2;
+  border-color: #fffbf2;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.category-filter:focus+label::before,
+.subcategory-filter:focus+label::before {
+  box-shadow: 0 0 0 0.2rem #fffbf22d;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.category-filter:focus:not(:checked)+label::before,
+.subcategory-filter:focus:not(:checked)+label::before {
+  border-color: #fffbf2;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.category-filter:disabled+label::before,
+.subcategory-filter:disabled+label::before {
+  background-color: #fffbf2;
+}
+
+.subcategory-filter+label {
+  /* margin-left: 25px; */
+  margin-top: 15px;
+}
+
+.border-filters {
+  /* height: 170px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* border-left: 1px solid; */
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  /* padding: 15px 25px;
+  padding-top: 0; */
+  /* border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px; */
+  margin-top: 20px;
+}
+
+.border-filters h1 {
+  font-size: 20px;
+}
+
+.border-filters span {
+  font-size: 14px;
 }
 
 @media (max-width: 1280px) {
   .catalog-page .catalog-products {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .product-card>a>img[src="../assets/images/bads/double/bad1_1.jpg"],
+  .product-card>a>img[src="../assets/images/bads/double/bad2_1.jpg"] {
+    margin: 60px auto;
   }
 }
 
@@ -132,16 +286,56 @@
     justify-content: start;
     gap: 0 30px;
   }
+
+  .checkbox-div {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid;
+  }
+
+  .border-filters {
+    width: 33.3%;
+  }
+
+  .border-filters:nth-of-type(4),
+  .border-filters:nth-of-type(5) {
+    border-bottom: 0;
+  }
+
 }
 
 @media (max-width: 880px) {
   .catalog-page .catalog-products {
     grid-template-columns: 1fr 1fr;
   }
+
+  .border-filters {
+    width: 50%;
+  }
+
+  .border-filters:nth-of-type(4) {
+    border-bottom: 1px solid;
+  }
 }
 
 @media (max-width: 600px) {
   .catalog-page .catalog-products {
     grid-template-columns: 1fr;
+  }
+  .catalog-page{
+    padding: 50px 10px;
+  }
+
+
+
+  .product-card>a>img[src="../assets/images/bads/double/bad4_1.jpg"],
+  .product-card>a>img[src="../assets/images/bads/double/bad5_1.jpg"] {
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .border-filters {
+    width: 100%;
   }
 }
